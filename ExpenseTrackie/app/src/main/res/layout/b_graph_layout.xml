@@ -1,0 +1,31 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffe6ffda"
+    android:id="@+id/expensetrackie">
+    <Button
+        android:id="@+id/BarGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BarGraph"
+        android:background="#ff98d773"
+        android:layout_marginTop="275dp" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>

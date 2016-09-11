@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+            android:background="#ffe6ffda">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/RENT"
+                android:background="#ff06a900">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXPENSE TRACKIE"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="normal|bold" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAY &quot;1 0 0&quot; TO ADD HUNDRED RUPEES"
+                android:id="@+id/textView15"
+                android:textSize="15dp"
+                android:textColor="#ff000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="inherit"
+                android:layout_below="@+id/textView18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSpeak"
+                android:src="@mipmap/microphone"
+                android:layout_below="@+id/RENT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#ffe6ffda" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rupees "
+                android:id="@+id/textView16"
+                android:layout_below="@+id/btnSpeak"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="43dp"
+                android:textSize="25dp"
+                android:textColor="#ff0d58ff"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtText"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toLeftOf="@+id/textView17"
+                android:layout_toStartOf="@+id/textView17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Added"
+                android:id="@+id/textView17"
+                android:textSize="25dp"
+                android:textColor="#ff0d58ff"
+                android:layout_above="@+id/button"
+                android:layout_toRightOf="@+id/btnSpeak"
+                android:layout_alignRight="@+id/frameLayout"
+                android:layout_alignEnd="@+id/frameLayout"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRESS  MIC BUTTON TO SPEAK"
+                android:id="@+id/textView18"
+                android:textSize="15dp"
+                android:textColor="#FF000000"
+                android:textStyle="normal|bold"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/button"
+                android:layout_below="@+id/txtText"
+                android:background="#ff98d773"
+                android:textStyle="normal|bold"
+                android:textSize="20dp"
+                android:layout_alignRight="@+id/textView17"
+                android:layout_alignEnd="@+id/textView17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frameLayout"
+                android:background="#ff06a900"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:id="@+id/btn_hme"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textSize="25dp"
+                    android:background="#ffe6ffda"
+                    android:textStyle="normal|bold"
+                    android:textColor="#ff06a900" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

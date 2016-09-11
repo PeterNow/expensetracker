@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+            android:background="#ffe6ffda"
+            android:id="@+id/expensetrackie">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/frameLayout3"
+                android:background="#ff06a900">
+
+                <TextView
+                    android:layout_width="368dp"
+                    android:layout_height="37dp"
+                    android:text="   EXPENSE VS INCOME"
+                    android:id="@+id/textView4"
+                    android:layout_alignBottom="@+id/frameLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginStart="43dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frameLayout4"
+                android:background="#ff06a900"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:id="@+id/hme_yer"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textSize="25dp"
+                    android:background="#ffe6ffda"
+                    android:textStyle="bold"
+                    android:textColor="#ff06a900" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL EXP"
+                android:id="@+id/textView6"
+                android:layout_marginTop="50dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_below="@+id/frameLayout3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW BY CHART"
+                android:id="@+id/btn_chart"
+                android:layout_centerVertical="true"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="#ff98d773"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/frameLayout4"
+                android:layout_alignEnd="@+id/frameLayout4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL INC"
+                android:id="@+id/textView30"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INC - EXP"
+                android:id="@+id/textView10"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_below="@+id/textView30"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:layout_alignRight="@+id/textView30"
+                android:layout_alignEnd="@+id/textView30" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tot_exp"
+                android:background="#ff98d773"
+                android:layout_alignTop="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tot_inc"
+                android:background="#ff98d773"
+                android:layout_above="@+id/textView10"
+                android:layout_alignRight="@+id/tot_exp"
+                android:layout_alignEnd="@+id/tot_exp" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tot_bal"
+                android:background="#ff98d773"
+                android:layout_alignBottom="@+id/textView10"
+                android:layout_alignLeft="@+id/tot_inc"
+                android:layout_alignStart="@+id/tot_inc" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cse.psgtech.expensetrackie"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cse.psgtech.expensetrackie.MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity"/>
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuRemainder"/>
+
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuViewIncome"
+           />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuExpenseVsIncome"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuViewExpense"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuAnalysis"
+           />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuRecord"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuAddExpense"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".menuAddIncome"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".viewExpenses"
+            />
+        <activity
+            android:label="@string/app_name"
+            android:name=".viewIncome"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".menuCalculator"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".performAnalysis"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".viewExpensebyCategory"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".userRegister"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".userLogin"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".todoMainActivity"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".todoDetail"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".graphExpenseActivity"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".Main_menu"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".viewIncomebyCategory"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".graphIncomeActivity"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".graphExpenseIncomeActivity"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".AboutUs"
+            />
+        <activity
+            android:label="Expense Trackie"
+            android:name=".settings"
+            />
+
+
+    </application>
+</manifest>

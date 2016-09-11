@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/expensetrackie"
+    android:background="#ffe6ffda">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="ADD WORK"
+        android:background="#ff98d773"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="27dp"
+        android:text="SEE LIST"
+        android:background="#ff98d773"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff06a900"
+        android:id="@+id/frameLayout12"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:id="@+id/todo_hme"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="25dp"
+            android:background="#ffe6ffda"
+            android:textStyle="normal|bold"
+            android:textColor="#ff06a900" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff06a900"
+        android:id="@+id/frameLayout12"
+        android:layout_above="@+id/frameLayout12"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO DO LIST"
+            android:id="@+id/textView29"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            android:textColor="#FFFFFFFF"
+            android:background="#ff06a900" />
+    </FrameLayout>
+
+</RelativeLayout>
+    </LinearLayout>
+    </ScrollView>

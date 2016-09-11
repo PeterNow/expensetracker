@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+            android:background="#fffffccb"
+            android:clickable="false"
+            android:id="@+id/expensetrackie">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/RENT"
+                android:background="#ffff3e1a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXPENSE TRACKIE"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="normal|bold" />
+            </FrameLayout>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:id="@+id/loginbutton"
+                android:textColor="#010101"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="#ffffd26d"
+                android:layout_marginBottom="73dp"
+                android:layout_above="@+id/btn_about"
+                android:layout_alignLeft="@+id/btn_about"
+                android:layout_alignStart="@+id/btn_about" />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:id="@+id/btn_about"
+                android:textColor="#010101"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="25dp"
+                android:background="#ffffd26d"
+                android:layout_above="@+id/expensetrackie"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="178dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/frameLayout9"
+                android:layout_below="@+id/RENT">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ffff3e1a"
+                android:id="@+id/expensetrackie">
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETTINGS"
+                    android:id="@+id/btnsettings"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fffffccb"
+                    android:textColor="#ffff6e00"
+                    android:textSize="15dp"
+                    android:textStyle="normal|bold" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
